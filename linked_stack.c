@@ -44,20 +44,7 @@ printf("Underflow");
 else
 start=start->next;
 }
-void dend(){//del at end
-ptr=start;
-if(ptr==NULL){
-printf("Underflow");
-}
-else
-{
-while(ptr->next!=NULL){
-tmp=ptr;
-ptr=ptr->next;
-}tmp->next=NULL;
-}
 
-}
 
 void displ(){//fn to disply
 ptr=start;
