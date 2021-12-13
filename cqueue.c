@@ -3,7 +3,7 @@ int queue[50];
 #define n 5
 int front=-1,rear=-1;
 void enqueue(){
-if(front==0&&rear>=n-1){
+if((front==0&&rear>=n-1)||rear==front-1){
 printf("QUEUE IS FULL");
 }
 else
