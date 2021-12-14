@@ -150,5 +150,5 @@ default:printf("Enter a valid choice");
 
 
 //read me
-//insertion completed all cases
+//success
 //display success
