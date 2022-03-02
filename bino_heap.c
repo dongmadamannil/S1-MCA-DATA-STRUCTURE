@@ -23,11 +23,7 @@ int bin_HEAP_DELETE(struct node*, int);
  
 int count = 1;
  
-/* struct node* MAKE_bin_HEAP() {
-    struct node* np;
-    np = NULL;
-    return np;
-} */
+
  
 struct node * H = NULL;
 struct node *Hr = NULL;
@@ -103,7 +99,7 @@ struct node* bin_HEAP_MERGE(struct node* H1, struct node* H2) {
         if (z != NULL && y->degree <= z->degree)
             H = y;
         else if (z != NULL && y->degree > z->degree)
-            /* need some modifications here;the first and the else conditions can be merged together!!!! */
+            /* need some modifications here Don look on it!!! */
             H = z;
         else
             H = y;
@@ -125,7 +121,7 @@ struct node* bin_HEAP_MERGE(struct node* H1, struct node* H2) {
     return H;
 }
  
-int DISPLAY(struct node* H) {
+int DISPLAY(struct node* H) {//work on display
     struct node* p;
     if (H == NULL) {
         printf("\nHEAP EMPTY");
@@ -140,14 +136,7 @@ int DISPLAY(struct node* H) {
         p = p->sibling;
     }
     printf("\n");
-    /* p=H;
-    p=p->child;
-    while (p != NULL) {
-        printf("%d", p->n);
-        if (p->sibling != NULL)
-            printf("-->");
-        p = p->sibling;
-    } */
+   
 }
  
 struct node* bin_HEAP_EXTRACT_MIN(struct node* H1) {

@@ -1,5 +1,4 @@
 #include <stdio.h>
-//#include <conio.h>
 int main()
 {
 	int a[30], i, n, o, top = -1, ITEM;
