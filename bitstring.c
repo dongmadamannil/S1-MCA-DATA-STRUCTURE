@@ -18,7 +18,7 @@ scanf("%d",&m);
 printf("ENter %d elements",m);
 for(i=0;i<m;i++)
 scanf("%d",&b[i]);
-for(i=0;i<u;i++){//loop to convert sets inti bit string
+for(i=0;i<u;i++){//loop to convert sets into bit string
 ab[i]=0;bb[i]=0;
 for(j=0;j<n;j++)
 if(uni[i]==a[j])

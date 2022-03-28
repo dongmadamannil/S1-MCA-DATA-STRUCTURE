@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void main() {
   int n = 0;
   printf("enter how many vertex are there - ");
